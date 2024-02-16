@@ -282,3 +282,24 @@ footer i {
     filter: brightness(.7);
     transition: all 300ms ease-in-out;
 }
+
+.preparation-steps h1,
+.preparation-steps h2,
+.preparation-steps h3,
+.preparation-steps h4,
+.preparation-steps h5,
+.preparation-steps h6,
+.preparation-steps pre,
+.preparation-steps p {
+    margin: 2rem 0;
+}
+
+.preparation-steps ol,
+.preparation-steps ul{
+    margin: 2rem;
+    padding: 0 2rem;
+}
+
+.center {
+    text-align: center;
+}

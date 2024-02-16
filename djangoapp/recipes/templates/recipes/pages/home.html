@@ -4,8 +4,14 @@
 
 {% block content %}
         <div class="main-content main-contant-list container">
-            {% for recipe in recipes %}
+            {% for  recipe in recipes  %}
                 {% include 'recipes/partial/recipe.html' %}
+            {% empty %}
+                <div class="center">
+                    <h4 class="alert-heading">Erro 404 - Página não encontrada!</h4>
+                    <p>Desculpe, a página que você está procurando não foi encontrada.</p>
+                    <p class="mb-0">Por favor, verifique se o URL está correto ou volte para a <a href="{% url 'recipe:home' %}">página inicial</a>.</p>
+                </div>
             {% endfor %}
         </div>
 {% endblock content %}
