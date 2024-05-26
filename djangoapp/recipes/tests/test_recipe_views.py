@@ -71,7 +71,7 @@ class RecipeViewsTest(RecipeTastBase):
         need_title = 'Title Category test'
         self.make_recipe(title=need_title)
         # Carrega a página
-        response = self.client.get(reverse('recipe:category', args=(1,)))
+        response = self.client.get(reverse('recipe:category', args=(5,)))
         # Decodifica o conteúdo da página
         response_content = response.content.decode('utf-8')
         # Verifica se a receita foi carregada
